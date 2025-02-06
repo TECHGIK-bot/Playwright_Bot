@@ -122,7 +122,7 @@ def Open_49ja():
       # Next we Open a new page to input our url
       Web_page  = chrome.new_page()
       # Next we tell the webpage to go to our url
-      Web_page.goto(url)
+      Web_page.goto(url, headers={"Upgrade-Insecure-Requests": "1"})
 
       checker(Web_page)
       
