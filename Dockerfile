@@ -13,8 +13,5 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Install Playwright browsers
 RUN playwright install --with-deps
 
-# Set environment variables (optional)
-ENV PYTHONUNBUFFERED=1
-
 # Command to run your bot script
-CMD ["python", "your_script.py"]
+CMD ["python", "main.py"]
