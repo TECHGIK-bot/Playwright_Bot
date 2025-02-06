@@ -118,7 +118,7 @@ def Open_49ja():
 
       url = 'https://logigames.bet9ja.com/Games/Launcher?gameId=11000&provider=0&pff=1&skin=201'
       # So firstly we create our browser
-      chrome = p.chromium.launch(headless = False, executable_path=r'C:\Program Files\Google\Chrome\Application\chrome.exe')
+      chrome = p.chromium.launch(headless = True)
       # Next we Open a new page to input our url
       Web_page  = chrome.new_page()
       # Next we tell the webpage to go to our url
